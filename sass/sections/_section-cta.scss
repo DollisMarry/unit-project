@@ -1,0 +1,70 @@
+.section-cta {
+    position: relative;
+padding-top: 83px;
+padding-bottom: 84px;
+@include bgimage("./../img/background/Rectangle-02.jpg");
+
+&::before {
+    @extend %overlay;
+}
+
+
+/* Teblet */
+@media (max-width: 1199px) {
+padding: 40px 0;
+@include bgimage("./../img/background/Rectangle-02tablet.jpg");
+}
+
+
+/* Mobile */
+@media (max-width: 899px) {
+    @include bgimage("./../img/background/Rectangle-02mobile.jpg");
+}
+
+/* Mobile XS */
+@media (max-width: 599px) {
+    @include bgimage("./../img/background/Rectangle-02xs.jpg");
+}
+
+}
+
+
+.section-cta__content {
+position: relative;
+z-index: 9;
+text-align: center;
+color: $whiteText;
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+}
+
+}
+.section-cta__title {
+
+margin-bottom: 40px;
+font-weight: 500;
+font-size: 22px;
+line-height: 1;
+
+span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 899px) {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* Mobile XS */
+@media (max-width: 599px) {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+}
+
+
